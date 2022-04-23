@@ -404,3 +404,21 @@ a{
         justify-content: space-between;
     }
 }
+
+
+            /*-------ASIDE-------*/
+.count{
+    position: absolute;
+    bottom: 0;
+    right: -7px;
+    width: 16px;
+    height: 16px;
+    padding: .25rem;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
+}
