@@ -187,6 +187,7 @@ nav ul li a img{
 
 .home-detalle{
     margin-bottom: 1.5rem;
+    width: 95%;
 }
 
 .home-price{
@@ -207,13 +208,26 @@ nav ul li a img{
     padding: 1.25rem 2rem;
 }
 
+.home-button:hover{
+    background-color: rgb(198, 48, 48);
+    padding: 1.75rem 2.5rem;
+    transition: .5s;
+}
+
 .button-gray-small{
     background-color: hsl(0deg 0% 75%);
     color: black;
     padding: 1rem 1.5rem;
 }
 
-@media screen and (min-width:600px){
+.button-gray-small:hover{
+    background-color: rgb(198, 48, 48);
+    color: white;
+    padding: 1.5rem 2.5rem;
+    transition: .5s;
+}
+
+@media screen and (min-width:767px){
     .home-contenedor{
         grid-template-columns: 1fr 20rem;
         align-items: center;
@@ -221,6 +235,10 @@ nav ul li a img{
 
     .home-info{
         margin-left: 2rem;
+    }
+
+    .home-detalle{
+        width: 100%;
     }
 
     
@@ -320,6 +338,11 @@ div{
     color: black;
 }
 
+.products-button:hover{
+    padding: .8rem;
+    top: -1.4rem;
+}
+
 .products-button img{
     width: 12px;
     height: 12px;
@@ -329,7 +352,7 @@ a{
     text-decoration: none;
 }
 
-@media screen and (min-width:600px){
+@media screen and (min-width:767px){
     .productos-filtros{
         grid-template-columns: repeat(4, 150px);
     }
@@ -394,7 +417,7 @@ a{
     color: hsl(0deg 0% 55%);
 }
 
-@media screen and (min-width:600px){
+@media screen and (min-width:767px){
     .section{
         padding: 8rem 0 1rem;
     }
