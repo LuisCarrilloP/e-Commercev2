@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>e-Commerce</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
@@ -27,6 +27,8 @@
             </li>
         </ul>
     </nav>
+
+    
 
 
                     <!-- MAIN -->
@@ -222,6 +224,35 @@
             </a>
         </div>
     </aside>
+
+
+
+                <!--CART-->
+    <div class="cart show-cart" id="cart">
+        <img src="./assets/images/cancel.png" alt="" class="x cart-close" id="x-btn">
+        <h2 class="cart-title">My wish</h2>
+        <div class="cart-contenedor">
+            <div class="cart-empty">
+                <img src="./assets/images/bag.png" alt="">
+                <h2>Let´s add something</h2>
+                <p>
+                    You can add items by clicking on the "+" button on the product page
+                </p>
+            </div>
+            <div class="cart-prices">
+                <span class="cart-prices-item">
+                    <span id="items-count">0</span> items
+                </span>
+                <span class="cart-prices-total" id="cart-total">$0.00</span>
+            </div>
+            <div class="cart-checkout">
+                <button class="button cart_btn" id="cart-checkout" disabled="disabled">
+                    <img src="./assets/images/insurance.png" alt="" class="checkshield">
+                        Checkout
+                </button>
+            </div>
+        </div>
+    </div>
 
     <script src="./assets/js/main.js"></script>
 </body>
