@@ -25,6 +25,9 @@
             <li>
                 <a href="#products">Products</a>
             </li>
+            <li>
+                <button onclick="prueba()">PRUEBA</button>
+            </li>
         </ul>
     </nav>
 
@@ -86,15 +89,15 @@
                     <!--HOODIES-->
                     <article class="products-card hoodies">
                         <div class="products-shape">
-                            <img src="./assets/images/hoodie.jpeg" alt="" class="products-img">
+                            <img src="./assets/images/hoodie.jpeg" alt="" class="products-img" id="img-1">
                         </div>
                         <div class="products-info">
-                            <h2 class="products-price">
-                                $104.00
+                            <h2 class="products-price" >
+                                <span id="price-1">$104.00</span>
                                 <span class="products-stock">Stock: 15</span>
                             </h2>
-                            <h3 class="products-name">Hoodies</h3>
-                            <button class="button products-button">
+                            <h3 class="products-name" id="name-1">Hoodies</h3>
+                            <button class="button products-button" onclick="addProduct('1')">
                                 <img src="./assets/images/002-plus.png" alt="">
                             </button>
                         </div>
@@ -102,15 +105,15 @@
                     <!--SHIRTS-->
                     <article class="products-card shirts">
                         <div class="products-shape">
-                            <img src="./assets/images/polo.jpeg" alt="" class="products-img">
+                            <img src="./assets/images/polo.jpeg" alt="" class="products-img" id="img-2">
                         </div>
                         <div class="products-info">
                             <h2 class="products-price">
-                                $85.00
+                                <span id="price-2">$85.00</span>
                                 <span class="products-stock">Stock: 10</span>
                             </h2>
-                            <h3 class="products-name">Shirts</h3>
-                            <button class="button products-button">
+                            <h3 class="products-name" id="name-2">Shirts</h3>
+                            <button class="button products-button" onclick="addProduct('2')">
                                 <img src="./assets/images/002-plus.png" alt="">
                             </button>
                         </div>
@@ -118,15 +121,15 @@
                     <!--CAPS-->
                     <article class="products-card caps">
                         <div class="products-shape">
-                            <img src="./assets/images/cap.jpeg" alt="" class="products-img">
+                            <img src="./assets/images/cap.jpeg" alt="" class="products-img" id="img-3">
                         </div>
                         <div class="products-info">
                             <h2 class="products-price">
-                                $50.00
+                                <span id="price-3">$50.00</span>
                                 <span class="products-stock">Stock: 12</span>
                             </h2>
-                            <h3 class="products-name">Caps</h3>
-                            <button class="button products-button">
+                            <h3 class="products-name" id="name-3">Caps</h3>
+                            <button class="button products-button" onclick="addProduct('3')">
                                 <img src="./assets/images/002-plus.png" alt="">
                             </button>
                         </div>
@@ -232,6 +235,9 @@
         <img src="./assets/images/cancel.png" alt="" class="x cart-close" id="x-btn">
         <h2 class="cart-title">My wish</h2>
         <div class="cart-contenedor">
+            <div id="cart-body">
+
+            </div>
             <div class="cart-empty">
                 <img src="./assets/images/bag.png" alt="">
                 <h2>Let´s add something</h2>

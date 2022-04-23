@@ -460,6 +460,9 @@ a{
     /* display: none; */ /*-------------*/
 
 }
+.card-nueva{
+  /*   background-color: red; */
+}
 
 .show-cart{
     right: 0;
