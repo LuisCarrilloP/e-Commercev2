@@ -16,7 +16,9 @@
             <img src="./assets/images/005-menu.png" alt="">
         </label>
         <label for="" class="logo">
-            <img src="./assets/images/f1.png" alt="">
+            <a href="#home">
+                <img src="./assets/images/f1.png" alt="">
+            </a>
         </label>
         <ul>
             <li>
@@ -24,9 +26,6 @@
             </li>
             <li>
                 <a href="#products">Products</a>
-            </li>
-            <li>
-                <button onclick="prueba()">PRUEBA</button>
             </li>
         </ul>
     </nav>
@@ -98,7 +97,7 @@
                             </h2>
                             <h3 class="products-name" id="name-1">Hoodies</h3>
                             <button class="button products-button" onclick="addProduct('1')">
-                                <img src="./assets/images/002-plus.png" alt="">
+                                <img src="./assets/images/002-plus.png" alt="" id="plus-button">
                             </button>
                         </div>
                     </article>
@@ -114,7 +113,7 @@
                             </h2>
                             <h3 class="products-name" id="name-2">Shirts</h3>
                             <button class="button products-button" onclick="addProduct('2')">
-                                <img src="./assets/images/002-plus.png" alt="">
+                                <img src="./assets/images/002-plus.png" alt="" id="plus-button">
                             </button>
                         </div>
                     </article>
@@ -130,7 +129,7 @@
                             </h2>
                             <h3 class="products-name" id="name-3">Caps</h3>
                             <button class="button products-button" onclick="addProduct('3')">
-                                <img src="./assets/images/002-plus.png" alt="">
+                                <img src="./assets/images/002-plus.png" alt="" id="plus-button">
                             </button>
                         </div>
                     </article>
@@ -222,7 +221,7 @@
                 <img src="./assets/images/004-moon.png" alt="">
             </a>
             <a href="#">
-                <img src="./assets/images/003-shopping-bag.png" alt="">
+                <img src="./assets/images/003-shopping-bag.png" alt="" id="bag-button">
                 <span class="count">0</span>
             </a>
         </div>
@@ -238,14 +237,14 @@
             <div id="cart-body">
 
             </div>
-            <div class="cart-empty">
+            <div class="cart-empty empty">
                 <img src="./assets/images/bag.png" alt="">
                 <h2>Let´s add something</h2>
                 <p>
                     You can add items by clicking on the "+" button on the product page
                 </p>
             </div>
-            <div class="cart-prices">
+            <div class="cart-prices empty">
                 <span class="cart-prices-item">
                     <span id="items-count">0</span> items
                 </span>

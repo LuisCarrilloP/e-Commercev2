@@ -5,12 +5,31 @@ document.addEventListener("DOMContentLoaded", function(){
 const cerrarCart = document.getElementById("x-btn")
 const cart = document.querySelectorAll(".cart")
 
-
 cerrarCart.addEventListener("click", () =>{
     cart.forEach(element => {
         /* console.log(element) */
         element.classList.add("hidden")
-        })
+    })
+})
+
+
+//eliminar empty con button plus
+const plusButton = document.getElementById("plus-button")
+const cartEmpty = document.querySelectorAll(".empty")
+
+plusButton.addEventListener("click", () =>{
+    cartEmpty.forEach(element => {
+        element.classList.add("hidden")
+    })
+})
+
+
+const bagButton = document.getElementById("bag-button")
+
+bagButton.addEventListener("click", ()=>{
+    cart.forEach(element => {
+         element.classList.remove("hidden")
+    })
 })
 
 
@@ -59,7 +78,7 @@ function addProduct(id){
     listaCart();
     //agregar
     
-    cart.classList.remove("hidden")
+    /* cart.classList.remove("hidden") */
 
 }
 
@@ -87,16 +106,30 @@ function listaCart(){
             total  +=  importe
             const fila = document.createElement('div')
             fila.className = "card-nueva";
-            fila.innerHTML = `<img src='${item.image}'>
-            <h2>${item.name}</h2>
-            <p>${item.qty}</p>
-            <p>${item.price}</p>
-            <p>${importe}</p>`;
+            fila.innerHTML = `<div class="card-cont"><img src='${item.image}'></div>
+            <div class="card-info">
+            <h2 class="card-title">${item.name}</h2>
+            <p class="card-price">$${item.price}0</p>
+            <p class="cart-subtotal">Subtotal: $${importe}.00</p>
+            <div class="card-qty">
+                <div class="card-qty-content">
+                    <span class="cart-qty-box minus">
+                        <img src="./assets/images/minus.png" alt="">
+                    </span>
+                    <p>${item.qty} units</p>
+                    <span class="cart-qty-box plus">
+                        <img src="./assets/images/plus.png" alt="">
+                    </span>
+                </div>
+            </div>
+            </div>`;
             cuerpo.appendChild(fila);
         })  
         
         const f  = document.createElement('div')
-        f.innerHTML = `<strong>Total: ${total}</strong>`
+        f.innerHTML = `<strong>Total: $${total}.00</strong>`
         cuerpo.appendChild(f);
     }
 }
+
+
