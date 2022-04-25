@@ -461,6 +461,11 @@ a{
 
 }
 
+
+
+
+
+
 /* card que se agrega*/
 .card-nueva{
   /* border: 1px solid red; */
@@ -609,11 +614,13 @@ a{
 .cart_btn{
     background-color: hsl(0deg 0% 90%);
     color: hsl(0deg 0% 15%);
+    border: 1px solid greenyellow;
 }
 
 .cart_btn:disabled{
     cursor: not-allowed;
     opacity: .5;
+    border: 1px black ;
 }
 
 .checkshield{

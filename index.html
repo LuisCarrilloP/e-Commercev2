@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-Commerce</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/db.js"></script>
 </head>
 <body>
 
@@ -72,15 +73,15 @@
                     </li>
                     <li class="products-item">
                         <h3 class="products-title">Hoodies</h3>
-                        <span class="products-stock">15 products</span>
+                        <span class="products-stock">3 products</span>
                     </li>
                     <li class="products-item">
                         <h3 class="products-title">Shirts</h3>
-                        <span class="products-stock">10 products</span>
+                        <span class="products-stock">4 products</span>
                     </li>
                     <li class="products-item">
                         <h3 class="products-title">Caps</h3>
-                        <span class="products-stock">12 products</span>
+                        <span class="products-stock">2 products</span>
                     </li>
                 </ul>
                 <!--CONTENIDO-->
@@ -93,7 +94,7 @@
                         <div class="products-info">
                             <h2 class="products-price" >
                                 <span id="price-1">$104.00</span>
-                                <span class="products-stock">Stock: 15</span>
+                                <span class="products-stock">Stock: 3</span>
                             </h2>
                             <h3 class="products-name" id="name-1">Hoodies</h3>
                             <button class="button products-button" onclick="addProduct('1')">
@@ -109,7 +110,7 @@
                         <div class="products-info">
                             <h2 class="products-price">
                                 <span id="price-2">$85.00</span>
-                                <span class="products-stock">Stock: 10</span>
+                                <span class="products-stock">Stock: 4</span>
                             </h2>
                             <h3 class="products-name" id="name-2">Shirts</h3>
                             <button class="button products-button" onclick="addProduct('2')">
@@ -125,7 +126,7 @@
                         <div class="products-info">
                             <h2 class="products-price">
                                 <span id="price-3">$50.00</span>
-                                <span class="products-stock">Stock: 12</span>
+                                <span class="products-stock">Stock: 2</span>
                             </h2>
                             <h3 class="products-name" id="name-3">Caps</h3>
                             <button class="button products-button" onclick="addProduct('3')">
@@ -237,21 +238,9 @@
             <div id="cart-body">
 
             </div>
-            <div class="cart-empty empty">
-                <img src="./assets/images/bag.png" alt="">
-                <h2>Let´s add something</h2>
-                <p>
-                    You can add items by clicking on the "+" button on the product page
-                </p>
-            </div>
-            <div class="cart-prices empty">
-                <span class="cart-prices-item">
-                    <span id="items-count">0</span> items
-                </span>
-                <span class="cart-prices-total" id="cart-total">$0.00</span>
-            </div>
+            
             <div class="cart-checkout">
-                <button class="button cart_btn" id="cart-checkout" disabled="disabled">
+                <button class="button cart_btn checkout-button" id="cart-checkout" disabled="disabled">
                     <img src="./assets/images/insurance.png" alt="" class="checkshield">
                         Checkout
                 </button>
